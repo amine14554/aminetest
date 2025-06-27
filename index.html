@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Amine - Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bgBooks"></canvas>
+    <div class="content">
+        <header>
+            <h1>Amine Library</h1>
+            <p>اكتشف مؤلفاتي وشارك شغف القراءة</p>
+            <nav>
+                <button class="nav-btn" onclick="scrollToSection('books')">📚 معرض الكتب</button>
+                <button class="nav-btn" onclick="scrollToSection('about')">ℹ️ حول</button>
+                <button class="nav-btn" onclick="contactMe()">✉️ اتصل بي</button>
+            </nav>
+        </header>
+        <main>
+            <section id="books">
+                <h2>معرض الكتب</h2>
+                <div class="books-gallery">
+                    <!-- يمكنك إضافة كتبك هنا -->
+                    <div class="book-card" onclick="window.open('https://link-to-your-book1.com')">
+                        <img src="https://i.pinimg.com/736x/97/38/b8/9738b8d813d30977a0d73f854665b096.jpg" alt="كتاب 1">
+                        <h3>اسم الكتاب 1</h3>
+                        <p>غير جاهز حاليا</p>
+                    </div>
+                    <div class="book-card" onclick="window.open('https://link-to-your-book2.com')">
+                        <img src="file:///C:/Users/Amine/Downloads/Untitled-2.png" alt="كتاب 2">
+                        <h3>اسم الكتاب 2</h3>
+                        <p>غير جاهز حاليا</p>
+                    </div>
+                    <!-- أضف المزيد حسب الحاجة -->
+                </div>
+            </section>
+            <section id="about">
+                <h2>عن الموقع</h2>
+                <p>
+                    هذا الموقع انشأته لمحبي القراءة كل كتاب ثمرة جهد وحب للكتابة.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <span>جميع الحقوق محفوظة &copy; 2025 - أمين</span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
