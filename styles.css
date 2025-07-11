@@ -1,0 +1,6 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    /* Instagram gradient background */
+    background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
+}
